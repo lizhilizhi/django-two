@@ -1,0 +1,5 @@
+[2019-08-07 10:31:29,229][MainThread:4637431232][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-08-07 10:31:39,908][MainThread:4495058368][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-08-07 10:32:04,849][Thread-1:123145520693248][task_id:django.request][log.py:228][WARNING][Not Found: /polls/index2]
+[2019-08-07 10:32:36,511][Thread-5:123145525948416][task_id:django.request][log.py:228][WARNING][Not Found: /polls/login2]
+[2019-08-07 10:32:58,554][Thread-5:123145525948416][task_id:root][views.py:41][INFO][1111]

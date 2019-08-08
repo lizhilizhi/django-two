@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Users/apple/semantic/dist/semantic.min.css">
+    <script src="/Users/apple/semantic/dist/semantic.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<h1></h1>
+    <form class="ui  form" method="POST" action="/polls/Api" >
+        {% csrf_token %}
+      <div class="field">
+        <label>url</label>
+        <input type="text" name="url" placeholder="url">
+      </div>
+      <div class="field">
+        <label>method</label>
+          <select type="text" name="method" placeholder="Last Name">
+              <option value="get">get</option>
+              <option value="post">post</option>
+          </select>
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+    {% for quest in quest %}
+    <h1>{{ quest.methon }}</h1>
+    {% endfor %}
+</body>
+</html>

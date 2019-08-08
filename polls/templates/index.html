@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Users/apple/semantic/dist/semantic.min.css">
+    <script src="/Users/apple/semantic/dist/semantic.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+
+</head>
+{% verbatim %}
+<body>
+    <div id ="app-1">
+        <p v-if ="seen">现在你看到我了</p>
+        <button  type="button" class="ui button">{{ details()}}</button>
+        <h1>{{details()}}</h1>
+
+        <h3>{{ quest.methon }}</h3>
+        <h2>{{ name }}</h2>
+    </div>
+    <script type="text/javascript">
+        var app1 = new Vue({
+            el:'#app-1',
+            data:{
+                seen:true,
+                message:"1"
+            },
+			methods: {
+				details: function() {
+					return  this.message + " - 学的不仅是技术，更是梦想！";
+				}
+			}
+        })
+    </script>
+</body>
+{% endverbatim %}
+
+</html>
